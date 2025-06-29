@@ -389,8 +389,8 @@ public class CardManagerJDialog extends javax.swing.JDialog implements CardContr
             return false;
         }
         // Kiểm tra độ dài mã thẻ
-        if (txtId.getText().trim().length() > 10) {
-            XDialog.alert("Mã thẻ không được quá 10 ký tự!");
+        if (txtId.getText().trim().length() > 4) {
+            XDialog.alert("Mã thẻ không được quá 4 số!");
             return false;
         }
         if (!radOperating.isSelected() && !radError.isSelected() && !radLose.isSelected()) {
